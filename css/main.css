@@ -1,0 +1,119 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+html,body{
+    background: #253141;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.left-side{
+    display:flex;
+}
+.logo{
+    font-size:2rem;
+    color:white;
+    font-weight:700;
+}
+.menu{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding: 0 50px;
+
+}
+.menu a{
+    color:rgba(255,255,245,0.8);
+    text-decoration:none;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+.right-side{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.lang{
+    color:rgba(255,255,245,0.8);
+    text-decoration:none;
+    padding: 0 60px 0 0;
+    text-transform: uppercase;
+}
+.signin{
+    background-color:#0375d5;
+    border-radius:5px;
+    padding:10px 20px;
+    font-size: 0.9rem;
+    color:white;
+    text-transform:uppercase;
+    font-weight: 800;
+}
+.container{
+    width:980px;
+    margin: 0 auto;
+}
+#featured{
+    padding: 50px 0;
+
+}
+.title{
+    font-size: 1.8rem;
+    color:azure;
+    margin-bottom: 25px;
+}
+.videos-sec{
+    display:grid;
+    grid-template-columns: 1fr 2fr 540px 2fr 1fr;
+    grid-gap:10px;
+}
+.video{
+    
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.img{
+    width:100%;
+    height:290px;
+    background:url(https://c.files.bbci.co.uk/E909/production/_112375695_crucible976.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: none;
+}
+.video-cen{
+    width:100%;
+    height:340px;
+    background:red;
+}
+.video-cen .img{
+    width:100%;
+    height:100%;
+    background:url(https://i.ytimg.com/vi/oYlsmbxTVM4/maxresdefault.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: none;
+    transform: scale(1.05);
+    border: 2px solid #00b4f0;
+} 
+.video:nth-child(1) .img{
+    position: relative;
+}
+.video:nth-child(1) .img .arrow{
+    height:100%;
+    position:absolute;
+    background:rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding:07px;
+}
+.fa-solid{
+    font-size: 2.5rem;
+    color:#00b4f0;
+}
