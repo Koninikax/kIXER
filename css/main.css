@@ -5,6 +5,14 @@
 html,body{
     background: #253141;
     font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to bottom,
+    rgba(37,49,65,0.5) 0%,
+    #253141 70%,
+    #253141 100%),
+    url("https://cdn2.unrealengine.com/social-image-battlepass-3840x2160-d337a789158e.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
 }
 
 header{
@@ -55,7 +63,7 @@ header{
     font-weight: 800;
 }
 .container{
-    width:980px;
+    width:1000px;
     margin: 0 auto;
 }
 #featured{
@@ -101,7 +109,7 @@ header{
     transform: scale(1.05);
     border: 2px solid #00b4f0;
 } 
-.video:nth-child(1) .img{
+.video:nth-child(1) .img, .video:nth-child(5) .img{
     position: relative;
 }
 .video:nth-child(1) .img .arrow{
@@ -116,4 +124,55 @@ header{
 .fa-solid{
     font-size: 2.5rem;
     color:#00b4f0;
+}
+.video:nth-child(5) .img .arrow{
+    height:100%;
+    position:absolute;
+    background:rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding:07px;
+    right:0;
+}
+.dots{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+}
+.circles{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.circle{
+    width:28px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.circle .bg{
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    background:white;
+    transition: all .2s ease-in-out;
+    
+}
+.circle:hover .bg{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#00b4f0;
+   
+}
+.circle-active .bg{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:#00b4f0;
+    
 }
