@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 html,body{
+    scroll-behavior:smooth ;
     background: #253141;
     font-family: 'Montserrat', sans-serif;
     background-image: linear-gradient(to bottom,
